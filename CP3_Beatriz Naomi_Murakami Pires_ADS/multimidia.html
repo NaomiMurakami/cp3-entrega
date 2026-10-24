@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia | Meu Site Pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Pessoal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+                <li><a href="multimidia.html" class="ativo">Multimídia</a></li>
+                <li><a href="graficos.html">Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Recursos Multimídia</h2>
+        <div class="media-grid">
+            
+            <section class="grid-card">
+                <h2>Áudio</h2>
+                <audio controls style="width: 100%;">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Seu navegador não suporta a tag de áudio.
+                </audio>
+            </section>
+
+            <section class="grid-card">
+                <h2>Vídeo YouTube</h2>
+                <iframe 
+                    src="https://www.youtube.com/embed/tlnZj_IUUTE" 
+                    title="Ladybug - Abertura" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+        </div>
+
+        <section style="margin-top: 20px;">
+                    <h2>Tema do fundo</h2>
+                    <div class="trilho" id="trilho">
+                        <div class="indicador"></div>
+                    </div>
+                </section>
+            </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2026. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

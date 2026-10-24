@@ -1,0 +1,9 @@
+# Sistema operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs e arquivos temporários
+*.log
+node_modules/

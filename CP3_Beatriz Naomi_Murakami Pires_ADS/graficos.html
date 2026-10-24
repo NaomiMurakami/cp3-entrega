@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos | Meu Site Pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Pessoal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+                <li><a href="multimidia.html">Multimídia</a></li>
+                <li><a href="graficos.html" class="ativo">Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Elementos Gráficos</h2>
+        <div class="graficos-grid">
+            
+            <section class="grid-card">
+                <h2>HTML5 Canvas</h2>
+                <canvas id="meuCanvas" width="280" height="150"></canvas>
+            </section>
+
+            <section class="grid-card">
+                <h2>Vetor SVG (Hover Estilizado)</h2>
+                <svg class="svg-estilizado" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+            </section>
+
+            <section style="margin-top: 20px;">
+            <h2>Tema do fundo</h2>
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2026. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('meuCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = '#e74c3c';
+        ctx.fillRect(10, 20, 90, 70);
+
+        ctx.beginPath();
+        ctx.arc(190, 55, 35, 0, 2 * Math.PI);
+        ctx.fillStyle = '#2ecc71';
+        ctx.fill();
+
+        ctx.fillStyle = '#333';
+        ctx.font = '14px Arial';
+        ctx.fillText('Canvas 2D', 100, 130);
+    </script>
+
+</body>
+</html>
