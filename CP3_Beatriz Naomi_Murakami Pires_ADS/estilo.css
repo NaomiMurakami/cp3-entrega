@@ -350,3 +350,9 @@ body.dark .grid-card {
     background-color: #1a1a1a;
     color: #ffffff;
 }
+
+/* Remove o fundo escuro dos cards de gráficos no modo escuro, se desejar */
+body.dark .grid-card {
+    background-color: transparent !important; /* ou use a cor de fundo clara original do seu tema */
+    border: 1px solid #ccc;
+}
