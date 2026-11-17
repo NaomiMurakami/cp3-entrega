@@ -1,4 +1,4 @@
-# Checkpoint 3 - Site Pessoal
+# Checkpoint 4 - Site Pessoal
 
 Projeto desenvolvido para a disciplina de Front-End / Web Development.
 
